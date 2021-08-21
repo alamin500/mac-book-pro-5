@@ -1,0 +1,89 @@
+/* body section  */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px 0 80px;
+}
+.main-content {
+  flex-basis: 50%;
+}
+
+/* image  */
+img {
+  width: 70%;
+  max-height: 500px;
+}
+.image-mac {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+/* button  */
+.prime-button {
+  margin-bottom: 10px;
+}
+.switch {
+  background-color: rgb(255, 0, 0);
+  color: rgba(255, 255, 255, 0.986);
+  cursor: pointer;
+  padding: 11px;
+  border-radius: 5px;
+  border: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.979);
+  border-radius: 5px;
+}
+
+/* error message  */
+.error {
+  color: rgba(255, 0, 0, 0.993);
+}
+.success {
+  color: rgba(0, 128, 0, 0.993);
+}
+
+input {
+  padding: 10px;
+  border: 1px solid rgba(96, 96, 231, 0.644);
+}
+
+/* table  */
+td,
+table,
+tr,
+th {
+  border-collapse: collapse;
+  padding: 10px 85px 10px 0;
+  font-weight: 600;
+}
+tr {
+  border-bottom: 1px solid rgba(15, 12, 12, 0.582);
+}
+table {
+  margin-top: 40px;
+}
+
+.line-1 {
+  height: 1px;
+  background: rgba(44, 23, 23, 0.411);
+}
+h4 {
+  margin-bottom: 2px;
+  padding-top: 20px;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.993);
+  color: rgba(255, 255, 255, 0.993);
+}
+.line-3 {
+  padding: 0 100px;
+}
