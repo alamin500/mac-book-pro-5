@@ -72,10 +72,7 @@ table {
   margin-top: 40px;
 }
 
-.line-1 {
-  height: 1px;
-  background: rgba(44, 23, 23, 0.411);
-}
+/* others */
 h4 {
   margin-bottom: 2px;
   padding-top: 20px;

@@ -1,4 +1,4 @@
-
+// total amount 
 function total(count){
     // best price
     const bestPrice = document.getElementById('best-price').innerText;
@@ -10,7 +10,6 @@ function total(count){
     const primaryDelivery = document.getElementById('delivery-charge').innerText;
 
     let amount = parseInt(bestPrice) + parseInt(extraMemory) + parseInt(extraStorage) + parseInt(primaryDelivery);
-    console.log(count)
 
      if(count == 'true'){
              let sum = amount * 20; 
@@ -24,20 +23,21 @@ function total(count){
     return amount;
 }
 
-
+// free delivery 
 function freeDelivery(){
-    const primaryDelivery = document.getElementById('delivery-charge');
-     primaryDelivery.innerText = 0;
+    const deliveryFree = document.getElementById('delivery-charge');
+     deliveryFree.innerText = 0;
      total();
-    
 }
+
+// delivery with charge 
 function deliveryCostButton(){
     const primaryDelivery = document.getElementById('delivery-charge');
      primaryDelivery.innerText = 20;
-    //  console.log(primaryDelivery.innerText);
     total();
-
 }
+
+// Pomo code
 function pomoCode(){
     const coupon = document.getElementById('coupon').value;
      if(coupon === 'stevekaku'){
@@ -47,12 +47,9 @@ function pomoCode(){
      }
      else{
         total(count='false');
-
         document.getElementById('error').innerText = 'coupon is incorrect';
         document.getElementById('success').innerText = '';
      }
-   
-
 }
 // handle 8gb memory button event
 document.getElementById('8gb-button').addEventListener('click',function(){
